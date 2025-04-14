@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+
+}
+
+.site-container{
+  padding: 0;
+  margin: 0 0 ;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 3px;
+}
+
+nav ul {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 3px 2rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: -1rem;
+  
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: orangered;
+}
+
+nav img{
+    width: 20%;
+ 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+
+.logo{
+    margin-left: 2.5rem;
+    width: 40%;
+    padding: 1rem;
+}
+
+.nav-links li:last-child {
+    margin-left: 8rem; /* this pushes the last li (your icons) to the far right */
+  }
+
+.cart-icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0.5rem;
+    margin-left: 2rem;
+ 
+    flex-basis: 50%;
+}
+.icons img{
+    width: 35%;
+    
+}
+
+.hearts{
+    width: 37% !important;
+    transition: transform 0.2s ease;
+}
+
+.hearts:hover {
+    transform: scale(1.2);
+  }
+
+#cart-count {display: none;
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+#favorites-count {
+  position: absolute;
+  top: 8px;
+  right: 160px;
+  background-color: #ff3852;
+  color: white;
+  font-size: 12px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.page-title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Styling for active favorite heart icons */
+.favorite-active {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  /* This creates a red color filter for the heart icon */
+  background: #ff080872;
+}
+
+.empty-favorites {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.flex-item {
+  background: #f5f5f5;
+  box-shadow: 0 0 3px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  min-height: 165px;
+  width: 20%;
+}
+
+.flex-item img{
+  width: 40%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.flex-item .cart{
+  margin-left: 12rem;
+  margin-top: -2rem;
+}
+
+.flex-item .cart img{
+  width: 20%;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.flex-item h3{
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.flex-item .cart button{
+  background: #191919;
+  color: #ffffff;
+  font-size: 2.5vw;
+  border-radius: 2px;
+  display: none;
+}
+
+.flex-item h4{
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  font-weight: 400
+  ;
+}
+
+.footer {
+  background-color: #e91111;
+  color: white;
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:-1rem;
+  text-align: left;
+}
+
+.footer-row h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.footer-row ul  {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-row ul li {
+  margin-bottom: 8px;
+}
+
+.footer-row ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.footer-row ul li a:hover {
+  color: #ffcc00;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media li {
+  margin: 0;
+}
+
+.social-media li img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 40rem){
+
+    .logo{
+        width: 60%;
+        margin-left: 0.7rem
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: 1em;
+        padding: 2em
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: ;
+        width: 100%;
+        background-color: #bebebe;
+        display: none;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        
+      }
+
+      .nav-links.show {
+        display: flex;
+        
+      }
+
+    nav ul li {
+        margin: 20px 0;
+        padding: 0 2rem;
+       
+       
+    }
+
+    nav ul li a{
+        color: rgb(19, 18, 18);
+        text-decoration: none;
+        
+     
+    }
+
+      .cart-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.3rem;
+        width: 100% !important;
+      }
+
+      .nav-links li:last-child {
+        margin-left: -3.5rem; /* this pushes the last li (your icons) to the far right */
+      }
+
+      
+  #cart-count {
+    margin-top: 5px;
+  }
+
+  .nav-links li:last-child {
+    width: 80;
+  }
+  
+    /* Hamburger animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        margin-top: -0.5rem;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    #favorites-count{
+      top: 300px;
+      right: 165px;
+    }
+
+    
+
+    .flex-item{
+      background: #d5d5d5;
+      box-shadow: 0 0 3px;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      min-height: 155px;
+      width: 80%;
+    }
+
+    .flex-item img{
+      width: 30%;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+
+    .flex-item .cart{
+      margin-left: 13rem;
+      margin-top: -2rem;
+    }
+
+    .flex-item h3{
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+
+    .inline-paragraph{
+     font-weight: 400;
+      margin-left: 1rem;
+    }
+
+    .flex-item .cart img{
+      width: 15%;
+    }
+
+    .flex-item .cart button{
+      background: #191919;
+      color: #ffffff;
+      font-size: 2.5vw;
+      border-radius: 2px;
+      display: none;
+     
+    }
+
+    .footer{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  
+  }
+  .social-media{
+  margin-left: 23%;
+  
+  }
+  
+  .social-media img{
+    margin-left: 100%;
+  }
+
+}
+
+  

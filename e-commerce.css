@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+
+}
+
+.site-container{
+    padding: 0;
+    margin: 0 0 1vh
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 3px;
+}
+
+nav ul {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 3px 2rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: -1rem;
+  
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: orangered;
+}
+
+nav img{
+    width: 20%;
+ 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+
+.logo{
+    margin-left: 2.5rem;
+    width: 40%;
+    padding: 1rem;
+}
+
+.nav-links li:last-child {
+    margin-left: 8rem; /* this pushes the last li (your icons) to the far right */
+  }
+
+.cart-icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0.5rem;
+    margin-left: 2rem;
+ 
+    flex-basis: 50%;
+}
+.icons img{
+    width: 35%;
+    
+}
+
+.hearts{
+    width: 37% !important;
+    transition: transform 0.2s ease;
+}
+
+.hearts:hover {
+    transform: scale(1.2);
+  }
+
+
+#cart-count {display: none;
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+.intro{
+    min-height: 70vh;
+    background: #f6f6f6;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+}
+
+.image-grid img{
+    width: 52% !important;
+    filter: grayscale();
+
+}
+
+.image-grid .first{
+
+    width: 40% important;
+    height: 280px;
+}
+
+.image-grid .second{
+    margin-left: -18rem;
+    width: 72% !important;
+}
+
+.image-grid .sept{
+    margin-left:-21rem;
+    height: 200px;
+    width: 14rem !important;
+    
+}
+
+.image-grid .four{
+    height: 350px;
+    width: 260px !important;
+    margin-left: -8rem;
+}
+
+.image-grid .fifth{
+    margin-left: 48rem;
+    margin-top: -6rem;
+    margin-bottom: -2rem;
+    width: 30% !important;
+    height: 283px;
+}
+
+.image-grid .sixth{
+    margin-left: 19rem;
+    width: 86.5% !important;
+  
+}
+
+.cart-icon{
+margin-left: 45rem;
+margin-top: auto
+;}
+
+.intro .word{
+position: absolute;
+top: 23rem;
+left: 3rem;
+
+
+}
+
+.intro .word h2{
+    font-size: 4rem;
+}
+
+.intro .word p{
+    text-align: left;
+    color: #e91111;
+    
+}
+
+.fifth{margin-left: 2rem;
+width: 30;}
+
+.sixth{
+    margin-left: 32rem;
+}
+
+.collection{
+    min-height: 100vh;
+    background: rgb(242, 237, 237);
+}
+
+.collection h1{
+   padding: 3rem;
+    margin-left: 4em;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+
+.flex {
+    display: flex;
+    width: 85%;
+    margin-left: 7em;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  background: transparent;
+}
+
+
+.flex-item {
+    width: 25%;
+    background: #ffffff;    
+    cursor: pointer;
+    margin-bottom: 65px;
+    margin-left: 40px;
+    border-radius: 10px;
+    height: 330px;
+   
+ 
+}
+
+.flex-item img {
+    width:89%;
+    height: 50%;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.details{
+    font-size: 1.2vw;
+    margin-left: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.flex-item h3{
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+.cart-icon {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.flex-item .cart{
+    margin-top: -3.4rem;
+    margin-left: 4.8rem;
+}
+
+.flex-item h4{
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.flex-item button{
+    margin-left: 1rem;
+    margin-top: 2.6rem;
+position: absolute;
+    background: #000000;
+    color: #ffffff;
+    font-size: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.flex-item .img{
+    width: 8%;
+    height: 10%;
+    margin-left:7rem;
+margin-top:2.5rem ;
+transition: transform 0.2s ease;
+cursor: pointer;}
+
+.flex-item .img:hover{
+    transform: scale(1.2);
+}
+
+.flex-item .img.favorite-active {
+    background: #ff080872;
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%);
+  }
+
+.mid{
+    background-color: #0e0e0e;
+    min-height: 5vh;
+}
+
+.mid .notice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    color: #ffffff;
+}
+
+
+.footer {
+    background-color: #e91111;
+    color: white;
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:-1rem;
+    text-align: left;
+}
+
+.footer-row h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.footer-row ul  {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-row ul li {
+    margin-bottom: 8px;
+}
+
+.footer-row ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.footer-row ul li a:hover {
+    color: #ffcc00;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media li {
+    margin: 0;
+}
+
+.social-media li img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 40rem){
+
+    .logo{
+        width: 60%;
+        margin-left: 0.7rem
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: 1em;
+        padding: 2em
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: ;
+        width: 100%;
+        background-color: #bebebe;
+        display: none;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        
+      }
+
+      .nav-links.show {
+        display: flex;
+        
+      }
+
+    nav ul li {
+        margin: 20px 0;
+        padding: 0 2rem;
+       
+       
+    }
+
+    nav ul li a{
+        color: rgb(19, 18, 18);
+        text-decoration: none;
+        
+     
+    }
+
+      .cart-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.3rem;
+        width: 100% !important;
+      }
+
+      .nav-links li:last-child {
+        margin-left: -3.5rem; /* this pushes the last li (your icons) to the far right */
+      }
+
+      
+  #cart-count {
+    margin-top: 5px;
+  }
+
+  .nav-links li:last-child {
+    width: 80;
+  }
+  
+    /* Hamburger animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        margin-top: -0.5rem;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.image-grid img{
+    width: 100% !important;
+    filter: none;
+}
+
+.image-grid .first{
+    margin-top: 13rem;
+    height: 10.6rem;
+    width: 7.75rem !important;
+}
+
+.image-grid .second{
+    margin-top: -0rem;
+    height: 12rem;
+    margin-left: -14rem;
+    width: 6.55rem !important; 
+}
+
+.image-grid .sept{
+    margin-top: -0rem;
+    height: 8.75rem;
+    margin-left: -6.5rem;
+    width: 7.5rem !important;
+}
+
+.image-grid .four{
+    width: 6.99rem !important;
+    margin-left: 0.5rem;
+    height: 16.2rem;
+}
+
+.image-grid .fifth{
+    margin-left: -17rem;
+    margin-top: 12rem;
+    width: 7.5rem !important;
+    height: 11.25rem;
+}
+
+.image-grid .sixth{
+    width: 48% !important;
+    margin-bottom: 5rem;
+    margin-top: -7rem;
+    height: 100px;
+    margin-right: -5rem;
+  
+}
+
+.intro .word{
+    margin-top: 6rem;
+    margin-left: -1rem;
+    padding: 0.5rem;
+}
+
+.intro .word h2{font-size: 6vw;}
+
+.intro .word br{
+    display: none;
+}
+
+.intro .word p{
+    font-size: 4vw;
+margin-bottom: 2rem;}
+
+    .collection h1{
+        font-size: 7vw;
+        margin-left: -1rem;
+    }
+
+    .flex{
+        margin-left: -0.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: -36% !important;
+    width: 100%;
+ 
+    
+    
+    }
+
+    .flex-item{
+        width: 9rem;
+        height: 235px;
+    }
+
+    .flex .details{
+        font-size: 0.55rem;
+        padding: 3px;
+        
+    }
+
+    .flex-item img{
+        width: 78%;
+        height: 90px;
+    }
+
+    .flex-item h3{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .flex-item h4{
+        font-size: 2.6vw;
+        margin-left: 1rem;
+        margin-top: 0.9rem;
+    }
+
+    .flex .img{
+        width: 15%;
+        margin-top: 2.7rem;
+        margin-left: -1rem;
+    }
+
+    .flex button{
+        font-size: 1.5vw;
+        margin-bottom: 0.8rem;
+    }
+
+.notice h2{
+    text-align: center;
+    font-size: 5vw;
+}
+
+.flex .cart{margin-left: 5.5rem;
+    width: 50%;
+}
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .social-media{
+    margin-left: 23%;
+    
+    }
+    
+    .social-media img{
+      margin-left: 100%;
+    }
+
+}
+
+@media screen and (max-width: 24rem){
+
+
+    .flex{
+        margin-left: -0.6rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: -36% !important;
+    width: 100%;
+ 
+    
+    
+    }
+
+    .flex-item{
+        width: 8rem;
+        height: 225px;
+    }
+
+    .flex .details{
+        font-size: 2.2vw;
+        padding: 2px;
+        
+    }
+
+    .flex-item img{
+        width: 78%;
+        height: 90px;
+    }
+
+    .flex-item h3{
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .flex-item h4{
+        font-size: 2.5vw;
+        margin-left: 1rem;
+        margin-top: 0.9rem;
+    }
+
+    .flex .img{
+        width: 15%;
+        margin-top: 2.7rem;
+        margin-left: -0.8rem;
+    }
+
+    .flex button{
+        font-size: 1.3vw;
+        margin-bottom: 0.8rem;
+    }
+
+.notice h2{
+    text-align: center;
+    font-size: 5vw;
+}
+
+.flex .cart{margin-left: 4.5rem;
+    width: 50%;
+}
+
+    
+}

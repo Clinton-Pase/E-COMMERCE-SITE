@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>E-COMMERCE SITE</title>
+    <link rel="stylesheet" href="e-commerce.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="site-container">
+        
+    <nav>
+
+        <a href="http://127.0.0.1:5500/index.html" target="_self"> <img alt="brand-logo" class="logo" src="Group 1.png"></a>
+
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
+            <li><a href="#collection">COLLECTION</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+
+            <li>
+                <div class="icons">
+                    <div class="cart-icons">
+                        <a title="cart" href="http://127.0.0.1:5500/cart-page.html" target="_self"> <img alt="cart" src="bi_cart-fill.png"></a>
+                        <span id="cart-count">0</span>
+
+
+                     <a title="Favorite" href="http://127.0.0.1:5500/favorites.html" target="_self"> <img class="hearts" alt="heart" src="🦆 icon _heart_.png"></a>
+                    
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+    </nav>
+
+
+    <div class="first-section">
+        <section class="intro">
+
+            <div class="image-grid">
+                <img class="first" src="Rectangle 7.png" alt="style1">
+                <img class="second" src="Rectangle 6.png" alt="style2">
+                <img class="sept" src="Rectangle 4.png" alt="style3">
+                <img class="four" src="Rectangle 2 (6).png" alt="style4">
+                <img class="fifth" src="Rectangle 3.png" alt="style5">
+                <img class="sixth" src="Rectangle 5.png" alt="style6">
+            </div>
+
+            <div class="word">
+                <h2>Women's<br> Collection</h2>
+                <p>Featuring a curated selection of stylish clothing,<br>footwear, and accessories</p>
+            </div>
+
+        </section>
+
+        <section class="collection" id="collection">
+            <div class="arrivals">
+                <h1>Find your perfect match</h1>
+
+
+
+                <div class="flex">
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (1).png">
+                        <h3>Blossom Elegance Heels </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$299.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Blossom Elegance Heels', '299.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (3).png">
+                        <h3>Serenitry Power Beige Suit</h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$299.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button
+                                onclick="addToCart('Serenitry Power Beige Suit', '299.00', 'Rectangle 2 (3).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2.png">
+                        <h3>Twins Elegance Heels </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$199.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Rose petal Stilettos', '109.00', 'Rectangle 2 (7).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (5).png">
+                        <h3>Holy Grail Item </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$299.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Holy Grail Item', '399.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (7).png">
+                        <h3> Azure Blossom Gown </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$290.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart(' Azure Blossom Gown', '320.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (8).png">
+                        <h3>Ivory Elegance Stilettos </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$109.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Ivory Elegance Stilettos', '109.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (9).png">
+                        <h3>White High-Top Sneakers </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$170.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('White High-Top Sneakers', '170.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (10).png">
+                        <h3>EverComfort Sweatshirt </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$90.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('EverComfort Sweatshirt', '90.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (11).png">
+                        <h3>PureStride White Sneakers </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$120.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('PureStride White Sneakers', '120.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (12).png">
+                        <h3>Blush Charm Sneakers </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$105.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Blush Charm Sneakers', '105.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (13).png">
+                        <h3>Urbans Elegance Necklace </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$60.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Urbans Elegance Necklace', '60.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (14).png">
+                        <h3>Luxleather Women's Boots </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$2199.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Luxleather Women Boots', '2i99.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (15).png">
+                        <h3>Blossom Elegance Heels </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$600.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Blossom Elegance Heels', '299.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (1).png">
+                        <h3>Summer floral </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$350.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Summer Floral', '350.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (1).png">
+                        <h3>Vivid Spectrum </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$299.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Vivid Spectrum', '299.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (1).png">
+                        <h3>Blossom Elegance Heels </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$299.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Blossom Elegance Heels', '299.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (1).png">
+                        <h3>Blossom Elegance Heels </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$299.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Blossom Elegance Heels', '299.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+
+                    <div class="flex-item">
+                        <img alt="vector" src="Rectangle 2 (1).png">
+                        <h3>Blossom Elegance Heels </h3>
+                        <p class="details">Step into a world of sophistication and charm
+                            with our floral designed
+                            blossom elegance heel</p>
+                        <h4 class="inline-paragraph">$199.00</h4>
+                        <div class="cart">
+                            <img alt="vector" class="img" src="🦆 icon _heart_ (1).png">
+                            <button onclick="addToCart('Blossom Elegance Heels', '199.00', 'Rectangle 2 (1).png')">Add
+                                to cart</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+        </section>
+
+        <section class="mid">
+            <div class="notice">
+                <h2>Become a member to enjoy unlimited discounts today!</h2>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-row">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-row">
+                <h3 id="contact">Contact </h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shippings& Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-row">
+                <h3 id="about">About us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a>
+                    <li><a href="#">Return Policy</a>
+                </ul>
+            </div>
+
+            <div class="footer-row">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img alt="social-icons" src="Vector (1).png"></a></li>
+                    <li><a href="#"><img alt="social-icons" src="Vector (2).png"></a></li>
+                    <li><a href="#"><img alt="social-icons" src="Vector (3).png"></a></li>
+                    <li><a href="#"><img alt="social-icons" src="Vector (4).png"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+ </div>
+
+
+    <script>
+
+        // Function to update cart 
+        function addToCart(name, price, image) {
+            // Get existing cart from localStorage
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add new item
+            cart.push({ name, price, image });
+
+            // Save updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Optional: Provide user feedback
+            alert(`${name} added to cart!`);
+        }
+
+        //Toggle menu function
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            hamburger.classList.toggle('active');
+        });
+
+
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+
+    
+  //Favorite functionality
+
+ //nitialize favorites in localStorage if it doesn't exist
+if (!localStorage.getItem('favorites')) {
+  localStorage.setItem('favorites', JSON.stringify([]));
+}
+
+//FUNCGION TO TOGGLE FAVORITES
+function toggleFavorite(name, price, image) {
+  const favorites = JSON.parse(localStorage.getItem('favorites'));
+    // Check if item exists in favorites
+  const existingIndex = favorites.findIndex(item => item.name === name);
+  
+  if (existingIndex > -1) {
+    // Remove from favorites
+    favorites.splice(existingIndex, 1);
+    updateHeartIcon(name, false);
+  } else {
+    // Add to favorites
+    favorites.push({
+      name,
+      price,
+      image
+    });
+    updateHeartIcon(name, true);
+  }
+  
+  // Save back to localStorage
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+}
+
+//Function to update heart icon appearance
+
+function updateHeartIcon(name, isFavorite) {
+  const productElements = document.querySelectorAll('.flex-item');
+  
+  productElements.forEach(item => {
+    if (item.querySelector('h3').textContent === name) {
+      const heartIcon = item.querySelector('.img');
+      if (isFavorite) {
+        heartIcon.classList.add('favorite-active');
+      } else {
+        heartIcon.classList.remove('favorite-active');
+      }
+    }
+  });
+}
+
+//  Function to load favorites status on page load
+function loadFavoritesStatus() {
+  const favorites = JSON.parse(localStorage.getItem('favorites'));
+  
+  favorites.forEach(favorite => {
+    updateHeartIcon(favorite.name, true);
+  });
+}
+
+
+//  Function to display favorites on the favorites page
+function displayFavorites() {
+  const favorites = JSON.parse(localStorage.getItem('favorites'));
+  const favoritesContainer = document.getElementById('favorites-container');
+  
+  // Clear container
+  favoritesContainer.innerHTML = '';
+  
+  if (favorites.length === 0) {
+    favoritesContainer.innerHTML = '<p class="empty-favorites">No favorites added yet.</p>';
+    return;
+  }
+  
+  // Add each favorite item
+  favorites.forEach(item => {
+    const favoriteItem = document.createElement('div');
+    favoriteItem.className = 'flex-item';
+    favoriteItem.innerHTML = `
+      <img src="${item.image}">
+      <h3>${item.name}</h3>
+      <h4 class="inline-paragraph">$${item.price}</h4>
+      <div class="cart">
+        <img alt="vector" class="img favorite-active" src="🦆 icon _heart_ (1).png" onclick="toggleFavorite('${item.name}', '${item.price}', '${item.image}')">
+        <button onclick="addToCart('${item.name}', '${item.price}', '${item.image}')">Add to cart</button>
+      </div>
+    `;
+    favoritesContainer.appendChild(favoriteItem);
+  });
+}
+
+// Call loadFavoritesStatus when the products page loads
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if we're on the products page
+  if (document.querySelectorAll('.flex-item').length > 0) {
+    loadFavoritesStatus();
+    
+    // Add click event listeners to all heart icons
+    document.querySelectorAll('.img').forEach(heartIcon => {
+      heartIcon.addEventListener('click', function() {
+        const productElement = this.closest('.flex-item');
+        const name = productElement.querySelector('h3').textContent;
+        const price = productElement.querySelector('.inline-paragraph').textContent.replace('$', '');
+        const image = productElement.querySelector('img').src;
+        
+        toggleFavorite(name, price, image);
+      });
+    });
+  }
+  
+  // Check if we're on the favorites page
+  if (document.getElementById('favorites-container')) {
+    displayFavorites();
+  }
+});
+        
+
+    </script>
+
+</body>

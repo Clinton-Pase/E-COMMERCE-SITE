@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+
+}
+
+.site-container{
+    padding: 0;
+    margin: 0  0 vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 3px;
+}
+
+nav ul {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 3px 2rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: -1rem;
+  
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: orangered;
+}
+
+nav img{
+    width: 20%;
+ 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+
+.logo{
+    margin-left: 2.5rem;
+    width: 40%;
+    padding: 1rem;
+}
+
+.nav-links li:last-child {
+    margin-left: 8rem; /* this pushes the last li (your icons) to the far right */
+  }
+
+.cart-icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0.5rem;
+    margin-left: 2rem;
+ 
+    flex-basis: 50%;
+}
+.icons img{
+    width: 35%;
+    
+}
+
+.hearts{
+    width: 37% !important;
+    transition: transform 0.2s ease;
+}
+
+.hearts:hover {
+    transform: scale(1.2);
+  }
+
+#cart-count {
+    position: absolute;
+    top: 10px;
+    right: 222px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+.cart-container {
+    width: 25rem;
+    margin-left: 3;
+    margin: 20px auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.real-container{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+
+.cart-container,.payment-section{
+    flex: 2;
+    width: 22rem;
+    margin-left: 7rem;
+}
+.payment-section{
+    margin-left: -14rem;
+}
+
+.intro{
+    margin-left: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.intro h1{
+    font-size: 3.5vw;
+    
+}
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 80px;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-remove {
+    color: red;
+    cursor: pointer;
+}
+
+.cart-summary {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+
+.subtotal, .tax, .total {
+    margin: 10px 0;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.payment-section {max-width: 26rem;
+    background-color: #eaeaea;
+    padding: 1rem;
+    margin: 1rem 25%;
+    border-radius: 8px;
+    margin-bottom: 7rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1)
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-group {
+    width: 48%;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-btn:hover {
+    background-color: #b30000;
+}
+
+.footer {
+    background-color: #e91111;
+    color: white;
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:-1rem;
+    text-align: left;
+}
+
+.footer-row h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.footer-row ul  {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-row ul li {
+    margin-bottom: 8px;
+}
+
+.footer-row ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.footer-row ul li a:hover {
+    color: #ffcc00;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media li {
+    margin: 0;
+}
+
+.social-media li img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 40rem){
+
+  
+    .logo{
+        width: 60%;
+        margin-left: 0.7rem
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: 1em;
+        padding: 2em
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: ;
+        width: 100%;
+        background-color: #bebebe;
+        display: none;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        
+      }
+
+      .nav-links.show {
+        display: flex;
+        
+      }
+
+    nav ul li {
+        margin: 20px 0;
+        padding: 0 2rem;
+       
+       
+    }
+
+    nav ul li a{
+        color: rgb(19, 18, 18);
+        text-decoration: none;
+        
+     
+    }
+
+      .cart-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.3rem;
+        width: 100% !important;
+      }
+
+      .nav-links li:last-child {
+        margin-left: -3.5rem; /* this pushes the last li (your icons) to the far right */
+      }
+
+      
+  #cart-count {
+     top: 255px;
+     right: 170px;
+  }
+
+  .nav-links li:last-child {
+    width: 80;
+  }
+  
+    /* Hamburger animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        margin-top: -0.5rem;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+   
+
+    .intro{
+        margin-left: 7rem;
+    }
+    
+.intro h1{
+font-size: 9vw;
+}
+
+.real-container{
+    flex-direction: column;
+    margin-left: -2.5rem;
+}
+
+.cart-container{
+width: 70% !important;
+margin-left: 5.5rem;
+
+}
+
+.payment-section{
+    width: 70%;
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.social-media{
+margin-left: 23%;
+
+}
+
+.social-media img{
+  margin-left: 100%;
+}
+}
