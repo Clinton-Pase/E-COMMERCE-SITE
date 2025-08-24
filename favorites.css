@@ -245,18 +245,20 @@ nav img{
   height: 20px;
 }
 
-@media screen and (max-width: 40rem){
+@media (max-width:1115px) and (min-width:200px){
 
-    .logo{
-        width: 60%;
-        margin-left: 0.7rem
+  .logo{
+        width: clamp(120px, 25vw, 200px); /* scales between mobile & desktop */
+    margin-left: clamp(0.5rem, 2vw, 1rem);
     }
 
-    .hamburger {
-        display: flex;
-        margin-left: 1em;
-        padding: 2em
-    }
+    
+  .hamburger {
+    display: flex;
+    margin-left: calc(64% - clamp(2rem, 10vw, 4rem)); /* pushes it flexibly */
+    padding: clamp(0.8rem, 2vw, 2rem);
+    cursor: pointer;
+  }
 
     .nav-links {
         flex-direction: column;
@@ -269,7 +271,7 @@ nav img{
         display: none;
         padding: 20px 0;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        
+        z-index: 1000;
       }
 
       .nav-links.show {
@@ -302,7 +304,6 @@ nav img{
       .nav-links li:last-child {
         margin-left: -3.5rem; /* this pushes the last li (your icons) to the far right */
       }
-
       
   #cart-count {
     margin-top: 5px;
@@ -326,12 +327,46 @@ nav img{
         transform: rotate(-45deg) translate(7px, -6px);
     }
 
-    #favorites-count{
-      top: 300px;
-      right: 165px;
+      .flex-item {
+    width: 28%; /* instead of 20% */
+  }
+
+  .flex-item img {
+    width: 50%;
+  }
+
+  .flex-item h3 {
+    font-size: 1.2rem;
+  margin-bottom: 1rem;
+  }
+
+  .flex-item h4{
+    font-size: 0.9rem;
+  }
+  
+    .flex-item .cart img {
+    width: 3vw;
+    margin-bottom: 1rem;
+    height: auto;
+    margin-left: -1rem;
+  
+  }
+
+  .flex-item .cart {
+    margin-left: 9rem;
+  }
+      .footer {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
     }
 
-    
+    .social-media {
+        justify-content: center;
+    }
+  }
+
+  @media (max-width:640px){
+
 
     .flex-item{
       background: #d5d5d5;
@@ -347,50 +382,32 @@ nav img{
       margin-left: 1rem;
       margin-top: 1rem;
     }
-
-    .flex-item .cart{
-      margin-left: 13rem;
-      margin-top: -2rem;
-    }
-
-    .flex-item h3{
-      font-size: 1rem;
-      margin-left: 1rem;
-    }
-
-    .inline-paragraph{
-     font-weight: 400;
-      margin-left: 1rem;
-    }
-
-    .flex-item .cart img{
-      width: 15%;
-    }
-
-    .flex-item .cart button{
-      background: #191919;
-      color: #ffffff;
-      font-size: 2.5vw;
-      border-radius: 2px;
-      display: none;
-     
-    }
-
-    .footer{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-  
-  }
-  .social-media{
-  margin-left: 23%;
-  
-  }
-  
-  .social-media img{
-    margin-left: 100%;
+        
+  #cart-count {
+    
+     display: none;
   }
 
+  .hamburger {
+    display: flex;
+    margin-left: calc(55% - clamp(2rem, 5vw, 4rem)); /* pushes it flexibly */
+    padding: clamp(0.8rem, 2vw, 2rem);
+    cursor: pointer;
+  }
+    
+     .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .social-media{
+    margin-left: 0;
+    
+    }
+    
+    .social-media img{
+      margin-left: 100%;
+    }
 }
 
-  
