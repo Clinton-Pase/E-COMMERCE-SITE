@@ -281,19 +281,21 @@ nav img{
     height: 20px;
 }
 
-@media screen and (max-width: 40rem){
 
-  
-    .logo{
-        width: 60%;
-        margin-left: 0.7rem
+@media (max-width:1115px) and (min-width:200px){
+
+ .logo{
+        width: clamp(120px, 25vw, 200px); /* scales between mobile & desktop */
+    margin-left: clamp(0.5rem, 2vw, 1rem);
     }
 
-    .hamburger {
-        display: flex;
-        margin-left: 1em;
-        padding: 2em
-    }
+    
+  .hamburger {
+    display: flex;
+    margin-left: calc(64% - clamp(2rem, 10vw, 4rem)); /* pushes it flexibly */
+    padding: clamp(0.8rem, 2vw, 2rem);
+    cursor: pointer;
+  }
 
     .nav-links {
         flex-direction: column;
@@ -306,7 +308,7 @@ nav img{
         display: none;
         padding: 20px 0;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        
+        z-index: 1000;
       }
 
       .nav-links.show {
@@ -339,11 +341,9 @@ nav img{
       .nav-links li:last-child {
         margin-left: -3.5rem; /* this pushes the last li (your icons) to the far right */
       }
-
       
   #cart-count {
-     top: 255px;
-     right: 170px;
+    margin-top: 5px;
   }
 
   .nav-links li:last-child {
@@ -364,45 +364,67 @@ nav img{
         transform: rotate(-45deg) translate(7px, -6px);
     }
 
-   
 
-    .intro{
-        margin-left: 7rem;
+    .real-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-container, .payment-section {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .intro {
+        margin-left: 2rem;
+        text-align: center;
+    }
+
+
+   .footer {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width:640px){
+
+.intro h1{
+font-size: 2rem;
+}
+
+        
+  #cart-count {
+    
+     display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: calc(55% - clamp(2rem, 5vw, 4rem)); /* pushes it flexibly */
+    padding: clamp(0.8rem, 2vw, 2rem);
+    cursor: pointer;
+  }
+    
+     .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .social-media{
+    margin-left: 0;
+    
     }
     
-.intro h1{
-font-size: 9vw;
+    .social-media img{
+      margin-left: 100%;
+    }
 }
 
-.real-container{
-    flex-direction: column;
-    margin-left: -2.5rem;
-}
-
-.cart-container{
-width: 70% !important;
-margin-left: 5.5rem;
-
-}
-
-.payment-section{
-    width: 70%;
-    margin-left: 5.5rem;
-    margin-top: 2rem;
-}
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-}
-.social-media{
-margin-left: 23%;
-
-}
-
-.social-media img{
-  margin-left: 100%;
-}
-}
